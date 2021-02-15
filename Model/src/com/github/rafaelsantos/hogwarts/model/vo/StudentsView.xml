@@ -20,7 +20,7 @@
     Name="StudentId"
     IsNotNull="true"
     PrecisionRule="true"
-    EntityAttrName="StudentId"
+    EntityAttrName="S"
     EntityUsage="Students"
     AliasName="STUDENT_ID"/>
   <ViewAttribute
