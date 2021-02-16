@@ -1,0 +1,11 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<BC4JConfig version="11.1" xmlns="http://xmlns.oracle.com/bc4j/configuration">
+   <AppModuleConfigBag ApplicationName="com.github.rafaelsantos.hogwarts.model.eo.AppModule">
+      <AppModuleConfig name="177AAE22F71" IsLazyLoadingTrue="true" DBconnection="java:comp/env/jdbc/hogwarts@xe.oracle.docker.io.localhost[hogwarts]DS" ApplicationName="com.github.rafaelsantos.hogwarts.model.eo.AppModule" jbo.project="com.github.rafaelsantos.hogwarts.model.Model" BC4JConfigName="AppModuleLocal" JDBCName="hogwarts@xe.oracle.docker.io.localhost[hogwarts]" DeployPlatform="LOCAL" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory">
+         <Database JDBCDataSource="java:comp/env/jdbc/hogwarts@xe.oracle.docker.io.localhost[hogwarts]DS" jbo.SQLBuilder="Oracle" jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps"/>
+         <Security AppModuleJndiName="com.github.rafaelsantos.hogwarts.model.eo.AppModule"/>
+         <Tester FullProxyInterfaceName="com.github.rafaelsantos.hogwarts.model.eo.common.AppModule"/>
+         <Custom ns0:LastUsedConfiguration="AppModuleLocal" ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+   </AppModuleConfigBag>
+</BC4JConfig>
