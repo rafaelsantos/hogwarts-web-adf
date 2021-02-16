@@ -24,11 +24,20 @@
     </DesignTime>
   </Containee>
   <Containee
+    Name="statics"
+    PackageName="com.github.rafaelsantos.hogwarts.model.vo.statics"
+    ObjectType="JboPackage">
+    <DesignTime>
+      <Attr Name="_VO" Value="true"/>
+    </DesignTime>
+  </Containee>
+  <Containee
     Name="vo"
     PackageName="com.github.rafaelsantos.hogwarts.model.vo"
     ObjectType="JboPackage">
     <DesignTime>
       <Attr Name="_VO" Value="true"/>
+      <Attr Name="_VL" Value="true"/>
     </DesignTime>
   </Containee>
 </JboProject>

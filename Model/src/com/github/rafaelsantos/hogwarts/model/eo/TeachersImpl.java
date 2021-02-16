@@ -51,6 +51,7 @@ public class TeachersImpl extends EntityImpl {
             return vals;
         }
     }
+
     public static final int TEACHERID = AttributesEnum.TeacherId.index();
     public static final int TEACHERNAME = AttributesEnum.TeacherName.index();
     public static final int TEACHERPHONE = AttributesEnum.TeacherPhone.index();
@@ -62,6 +63,13 @@ public class TeachersImpl extends EntityImpl {
      * This is the default constructor (do not remove).
      */
     public TeachersImpl() {
+    }
+
+    /**
+     * @return the definition object for this instance class.
+     */
+    public static synchronized EntityDefImpl getDefinitionObject() {
+        return EntityDefImpl.findDefObject("com.github.rafaelsantos.hogwarts.model.eo.Teachers");
     }
 
     /**
@@ -160,6 +168,7 @@ public class TeachersImpl extends EntityImpl {
         setAttributeInternal(TEACHERGENDAR, value);
     }
 
+
     /**
      * @param teacherId key constituent
 
@@ -167,13 +176,6 @@ public class TeachersImpl extends EntityImpl {
      */
     public static Key createPrimaryKey(BigDecimal teacherId) {
         return new Key(new Object[] { teacherId });
-    }
-
-    /**
-     * @return the definition object for this instance class.
-     */
-    public static synchronized EntityDefImpl getDefinitionObject() {
-        return EntityDefImpl.findDefObject("com.github.rafaelsantos.hogwarts.model.eo.Teachers");
     }
 
     /**
